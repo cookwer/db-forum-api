@@ -1,0 +1,8 @@
+uwsgi:
+    pidfile: /tmp/uwsgi_db.pid
+    uwsgi-socket: /tmp/db.sock
+    touch-reload: /home/gexogen/Projects/db/conf/uwsgi
+    pythonpath: /home/gexogen/Projects/db
+    module: run_server
+    callable: app
+    daemonize: /home/gexogen/Projects/db/log/uwsgi.log
